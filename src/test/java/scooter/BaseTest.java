@@ -8,7 +8,6 @@ import java.time.Duration;
 
 public class BaseTest {
     WebDriver driver;
-
     @Before
     public void setUp() {
 

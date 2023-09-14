@@ -12,8 +12,8 @@ public class MainPage {
         this.driver = driver;
         driver.get(SCOOTER_APP_URL);
     }
-    private final By orderButtonTop = By.xpath("//*[@id=\"root\"]/div/div/div[1]/div[2]/button[1]");
-    private final By orderButtonBottom = By.xpath("//*[@id=\"root\"]/div/div/div[4]/div[2]/div[5]/button");
+    private final By orderButtonTop = By.xpath("//button[contains(@class, 'Header_Button')]");
+    private final By orderButtonBottom = By.xpath("//div[contains(@class, 'Order_ButtonContainer')]//button[contains(@class, 'Button_Button')]");
 
     public void clickTopOrderButton() {
         driver.findElement(orderButtonTop).click();
